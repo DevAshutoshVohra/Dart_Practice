@@ -1,0 +1,20 @@
+
+//  Type Test Operator
+
+
+void main(){
+  Map person = {"name":"test","cars":["Honda","Suzuki","Toyota"]};
+  var carList = person["cars"] as List;
+  //We typecast cars list
+  
+  String number = "1";
+  if(number is int){ //checking data type of number
+   int test = number as int;
+   print(test); 
+  }
+  
+  if(number is! int){
+    print(number);  
+  }
+  print(carList);
+}
